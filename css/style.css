@@ -12,7 +12,6 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Soft gradient background */
-    margin: 0;
     color: #333;
 }
 
@@ -124,21 +123,36 @@ li:hover {
 }
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    input, button {
+        font-size: 15px;
+    }
+
+    .total {
+        font-size: 1.3em;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 25px;
-        max-width: 95%;
+        width: 95%;
     }
 
     h1 {
         font-size: 2em;
     }
 
-    input {
-        font-size: 15px;
-    }
-
-    button {
+    input, button {
         font-size: 15px;
     }
 
@@ -150,7 +164,7 @@ li:hover {
 @media (max-width: 480px) {
     .container {
         padding: 20px;
-        max-width: 100%;
+        width: 100%;
     }
 
     h1 {
